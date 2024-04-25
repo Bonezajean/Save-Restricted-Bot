@@ -83,7 +83,7 @@ def save(client: pyrogram.client.Client, message: pyrogram.types.messages_and_me
 
     try:
       try: acc.join_chat(message.text)
-      except Exception as e: 
+      except Exception as e 
         bot.send_message(message.chat.id,f"**Error** : __{e}__", reply_to_message_id=message.id)
         return
       bot.send_message(message.chat.id,"**Chat Joined**", reply_to_message_id=message.id)
