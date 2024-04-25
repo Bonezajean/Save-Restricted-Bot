@@ -141,7 +141,7 @@ def save(client: pyrogram.client.Client, message: pyrogram.types.messages_and_me
                 try:
                     # Forward the message to the target channel
                     bot.copy_message(
-                        getenv("TARGET_CHANNEL_ID"),  # Replace with your target channel ID
+                        getenv("-1002029423962"),  # Replace with your target channel ID
                         message.chat.id,
                         msgid,
                         reply_to_message_id=message.id
