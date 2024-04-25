@@ -70,7 +70,7 @@ def send_start(client: pyrogram.client.Client, message: pyrogram.types.messages_
                      reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🌐 Source Code", url="https://github.com/bipinkrish/Save-Restricted-Bot")]]), reply_to_message_id=message.id)
 
 # message processing (with channel forwarding)
-@bot.on_message(filters.channel & filters.chat(getenv("SOURCE_CHANNEL_ID")))  # Listen to source channel only
+@bot.on_message(filters.channel & filters.chat(getenv("-1002107541705")))  # Listen to source channel only
 def save(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
     print(message.text)
 
